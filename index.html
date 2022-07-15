@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal JS</title>
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+    <ul class="image-list-container">
+      <li class="image-item">
+        <figure onclick="SelectFigure(event)">
+          <img src="https://img.freepik.com/free-vector/night-ocean-landscape-full-moon-stars-shine_107791-7397.jpg?w=2000" alt="moon">
+        </figure>
+      </li>
+      <li class="image-item">
+        <figure onclick="SelectFigure(event)">
+          <img src="https://img.freepik.com/free-photo/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds_181624-11068.jpg?w=2000" alt="neon purple">
+        </figure>
+      </li>
+      <li class="image-item">
+        <figure onclick="SelectFigure(event)">
+          <img src="https://img.freepik.com/free-photo/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds-wallpapers_181624-9331.jpg?w=2000" alt="neon orange and blue">
+        </figure>
+      </li>
+    </ul>
+    <button class="btn-open" onclick="OpenModal(event)">Abrir Modal</button>
+    <div class="modal closed" onclick="CloseOutModal(event)">
+      <figure id="modal-figure" >
+        <img src="https://img.freepik.com/free-photo/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds-wallpapers_181624-9331.jpg?w=2000" alt="neon orange and blue">
+      </figure>
+      <span id="icon-close" onclick="CloseModal(event)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></svg>
+      </span>
+    </div>
+    <script src="./js//script.js"></script>
+  </body>
+</html>
